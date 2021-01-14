@@ -158,6 +158,31 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bio-image bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+  .about-info .bio-image {
+    grid-area: bio-image;
+    width: 250px;
+    margin: auto;
+    border-radius: 50%;
+    border: #fbd46d 3px solid; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    grid-area: job2; }
+  .about-info .job-3 {
+    grid-area: job3; }
+  .about-info .job {
+    background: #2c3440;
+    padding: 0.5rem;
+    border-bottom: #fbd46d 5px solid; }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
